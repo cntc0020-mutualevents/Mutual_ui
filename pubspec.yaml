@@ -1,0 +1,92 @@
+name: mutual_ui
+description: A new Flutter package project.
+version: 0.0.1
+author:
+
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # To add assets to your package, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  #
+  # For details regarding assets in packages, see
+  # https://flutter.dev/assets-and-images/#from-packages
+  #
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # To add custom fonts to your package, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+fonts:
+    - family: Open Sans
+      fonts:
+        - asset: assets/fonts/OpenSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/OpenSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/OpenSans-SemiBold.ttf
+          weight: 600
+    - family: Segoeui
+      fonts:
+        - asset: assets/fonts/SegoeUI-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/SegoeUI-Semibold.ttf
+          weight: 600
+    - family: Proximanova
+      fonts:
+        - asset: assets/fonts/proximanova-bold.otf
+          weight: 700
+        - asset: assets/fonts/ProximaNova-Regular.ttf
+          weight: 400
+    - family: Runda
+      fonts:
+        - asset: assets/fonts/Runda-Bold.otf
+          weight: 700
+        - asset: assets/fonts/Runda-Medium.otf
+          weight: 400
+    - family: Helvetica
+      fonts:
+        - asset: assets/fonts/Helvetica.ttf
+          weight: 700
+    - family: Highway Italic
+      fonts:
+        - asset: assets/fonts/HighwayItalic-yad3.otf
+          weight: 400
+    - family: Alyosha
+      fonts:
+      - asset: assets/fonts/Alyosha 400.ttf
+    - family: SFPro
+      fonts:
+      - asset: assets/fonts/FontsFree-Net-SFProText-Regular.ttf
+    - family: Signature
+      fonts:
+      - asset: assets/fonts/Double Signature.otf
+    - family: CustomIcons
+      fonts:
+        - asset: lib/utils/Icons/CustomIcons.ttf
+    - family: StarIcons
+      fonts:
+        - asset: lib/utils/Icons/StarIcons.ttf  
+  # For details regarding fonts in packages, see
+  # https://flutter.dev/custom-fonts/#from-packages

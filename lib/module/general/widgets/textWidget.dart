@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../mutual_ui.dart';
+import '../../../mutual_ui.dart';
 
 Text tw600s32(BuildContext context, String text, {Color? color}) => Text(text,
     style: Theme.of(context)

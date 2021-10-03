@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mutual_ui/module/general/textWidget.dart';
+import 'package:mutual_ui/module/general/widgets/textWidget.dart';
 import 'package:mutual_ui/utils/app_colors.dart';
 import 'package:mutual_ui/utils/assets_utils.dart';
 import 'package:mutual_ui/utils/widgets.dart';

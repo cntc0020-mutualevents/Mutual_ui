@@ -71,3 +71,13 @@ Widget borderContainer({Widget? child}) {
     child: child,
   );
 }
+
+Widget fortest({Widget? child}) {
+  return Container(
+    height: 64,
+    width: 64,
+    decoration: BoxDecoration(
+        shape: BoxShape.circle, border: Border.all(color: clightGrey)),
+    child: child,
+  );
+}

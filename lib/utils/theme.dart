@@ -140,15 +140,15 @@ class MyThemes {
   );
 
   static final darkTheme = ThemeData(
-    scaffoldBackgroundColor: Colors.grey.shade900,
+    scaffoldBackgroundColor: Colors.black,
     brightness: Brightness.dark,
     // colorScheme: const ColorScheme.dark(),
-    appBarTheme: AppBarTheme(color: Colors.grey.shade900),
+    appBarTheme: AppBarTheme(color: Colors.black),
     primaryColor: cPrimary,
     buttonColor: cPrimary,
-    accentColor: Colors.grey.shade800,
+    accentColor: Colors.grey.shade900,
     focusColor: cWhite,
-    cardColor: Colors.grey.shade800,
+    cardColor: Colors.grey.shade900,
     primaryColorLight: Colors.grey.shade300,
     // accentIconTheme: const IconThemeData(color: Colors.red),
     primarySwatch: Colors.deepOrange,

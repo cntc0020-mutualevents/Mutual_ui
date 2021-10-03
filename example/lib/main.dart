@@ -1,4 +1,6 @@
 import 'package:example/buttonShow.dart';
+import 'package:example/showEmptyWidget.dart';
+import 'package:example/textFieldShow.dart';
 import 'package:example/textShow.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -71,7 +73,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 56,
                 bgcolor: cPrimary,
                 radius: 16,
-                busy: false,
                 text: 'Button',
                 textColor: cWhite,
                 press: () => Get.to(() => ButtonShow()),
@@ -80,15 +81,29 @@ class _MyHomePageState extends State<MyHomePage> {
               MuButton(
                 context: context,
                 height: 56,
-                // bgcolor: cPrimary,
                 radius: 16,
-                busy: false,
                 borderColor: cDarkGrey,
                 text: 'Text',
-                //textColor: cWhite,
                 press: () => Get.to(() => TextShow()),
               ),
               sized0hx20,
+              MuButton(
+                context: context,
+                height: 56,
+                radius: 16,
+                borderColor: cDarkGrey,
+                text: 'TextField',
+                press: () => Get.to(() => TextFieldShow()),
+              ),
+              sized0hx20,
+              MuButton(
+                context: context,
+                height: 56,
+                radius: 16,
+                borderColor: cDarkGrey,
+                text: 'EmptyWidget',
+                press: () => Get.to(() => ShowEmptyContent()),
+              ),
             ],
           ),
         ),

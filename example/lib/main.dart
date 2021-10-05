@@ -10,6 +10,7 @@ import 'package:mutual_ui/utils/app_colors.dart';
 import 'package:mutual_ui/utils/theme.dart';
 
 import 'ThemeController/themeController.dart';
+import 'customSlider.dart';
 
 void main() {
   Get.put(ThemeController());
@@ -103,6 +104,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 borderColor: cDarkGrey,
                 text: 'EmptyWidget',
                 press: () => Get.to(() => ShowEmptyContent()),
+              ),
+              sized0hx20,
+              MuButton(
+                context: context,
+                height: 56,
+                radius: 16,
+                borderColor: cDarkGrey,
+                text: 'Custom Slider',
+                press: () => Get.to(() => CustomSlider()),
               ),
             ],
           ),

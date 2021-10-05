@@ -39,8 +39,11 @@ Text tw400s16(BuildContext context, String d, {Color? color}) => Text(d,
         .headline4
         ?.copyWith(fontSize: 16, color: color));
 
-Text tw400s14(BuildContext context, String d, {Color? color}) => Text(d,
-    style: Theme.of(context).textTheme.headline4?.copyWith(color: color));
+Text tw400s14(BuildContext context, String d,
+        {Color? color, TextAlign align = TextAlign.start}) =>
+    Text(d,
+        textAlign: align,
+        style: Theme.of(context).textTheme.headline4?.copyWith(color: color));
 
 Text tw400s12(BuildContext context, String d, {Color? color}) => Text(d,
     style: Theme.of(context)

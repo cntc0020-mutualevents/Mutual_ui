@@ -5,12 +5,15 @@ import 'package:shimmer/shimmer.dart';
 class EventCardShimmerListHor extends StatelessWidget {
   final int count;
   final int height;
+  final bool shadow;
+
   final Color baseColor;
   final Color highlightColor;
   const EventCardShimmerListHor(
       {Key? key,
       required this.count,
       this.height = 352,
+      this.shadow = true,
       required this.baseColor,
       required this.highlightColor})
       : super(key: key);
@@ -35,6 +38,7 @@ class EventCardShimmerListHor extends StatelessWidget {
               child: EventCardShimmer(
                 baseColor: baseColor,
                 highlightColor: highlightColor,
+                shadow: shadow,
               ),
             );
           }),
@@ -45,8 +49,12 @@ class EventCardShimmerListHor extends StatelessWidget {
 class EventCardShimmer extends StatelessWidget {
   final Color baseColor;
   final Color highlightColor;
+  final bool shadow;
   const EventCardShimmer(
-      {Key? key, required this.baseColor, required this.highlightColor})
+      {Key? key,
+      this.shadow = true,
+      required this.baseColor,
+      required this.highlightColor})
       : super(key: key);
 
   @override
@@ -61,12 +69,14 @@ class EventCardShimmer extends StatelessWidget {
           color: Theme.of(context).cardColor,
           borderRadius: BorderRadius.circular(15),
           boxShadow: [
-            BoxShadow(
-              blurRadius: 10,
-              color: cDarkGrey.withOpacity(0.2),
-              spreadRadius: 5,
-              offset: const Offset(-5, 10),
-            ),
+            shadow
+                ? BoxShadow(
+                    blurRadius: 10,
+                    color: cDarkGrey.withOpacity(0.2),
+                    spreadRadius: 5,
+                    offset: const Offset(-5, 10),
+                  )
+                : BoxShadow(),
           ]),
       child: Shimmer.fromColors(
         baseColor: baseColor,

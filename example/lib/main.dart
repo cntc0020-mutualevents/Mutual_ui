@@ -1,4 +1,5 @@
 import 'package:example/buttonShow.dart';
+import 'package:example/shimmerShow.dart';
 import 'package:example/showEmptyWidget.dart';
 import 'package:example/textFieldShow.dart';
 import 'package:example/textShow.dart';
@@ -113,6 +114,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 borderColor: cDarkGrey,
                 text: 'Custom Slider',
                 press: () => Get.to(() => CustomSlider()),
+              ),
+              sized0hx20,
+              MuButton(
+                context: context,
+                height: 56,
+                radius: 16,
+                borderColor: cDarkGrey,
+                text: 'Shimmer',
+                press: () => Get.to(() => ShimmerShow()),
               ),
             ],
           ),

@@ -18,8 +18,7 @@ class ListCardShimmerVer extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
-    return Center(
-        child: SizedBox(
+    return SizedBox(
       child: ListView.builder(
           itemCount: count,
           shrinkWrap: true,
@@ -34,7 +33,7 @@ class ListCardShimmerVer extends StatelessWidget {
               ),
             );
           }),
-    ));
+    );
   }
 }
 
